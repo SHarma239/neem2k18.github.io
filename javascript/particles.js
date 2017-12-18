@@ -27,10 +27,10 @@ var pJS = function(tag_id, params){
         }
       },
       color: {
-        value: '#fff'
+        value: '#000'
       },
       shape: {
-        type: 'circle',
+        type: 'edge',
         stroke: {
           width: 0,
           color: '#ff0000'
