@@ -9,14 +9,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <script type="text/javascript">
     $(document).ready(function() {
-
         var active1 = false;
         var active2 = false;
         var active3 = false;
         var active4 = false;
-
         $('.parent2').on('mousedown touchstart', function() {
-
             if (!active1) $(this).find('.test1').css({ 'background-color': 'gray', 'transform': 'translate(0px,125px)' });
             else $(this).find('.test1').css({ 'background-color': 'dimGray', 'transform': 'none' });
             if (!active2) $(this).find('.test2').css({ 'background-color': 'gray', 'transform': 'translate(60px,105px)' });
@@ -29,12 +26,10 @@
             active2 = !active2;
             active3 = !active3;
             active4 = !active4;
-
         });
     });
     $('.txt').html(function(i, html) {
         var chars = $.trim(html).split("");
-
         return '<span>' + chars.join('</span><span>') + '</span>';
     });
     </script>
@@ -56,12 +51,13 @@ NEEM 2K18
     <div class="fullscreen-bg">
     <video loop muted autoplay  class="fullscreen-bg__video">
         <!-- poster="/home/harshit/Documents/neem final 24.08.2k16/images/logo1.jpg"-->
-        	<source src="/home/harshit/Documents/Neem/img/VID-20171216-WA0028.mp4" type="video/mp4">
-            <source src="https://github.com/Neem2k18/neem2k18.github.io/tree/master/img/VID-20171216-WA0028.webm" type="video/webm">-->
-            <source src="https://github.com/Neem2k18/neem2k18.github.io/tree/master/img/VID-20171216-WA0028.mp4" type="video/mp4">-->    
+            
+            <source src="https://github.com/Neem2k18/neem2k18.github.io/blob/master/img/VID-20171216-WA0028.webm?raw=true" type="video/webm">-->
+            <source src="https://github.com/Neem2k18/neem2k18.github.io/blob/master/img/VID-20171216-WA0028.mp4?raw=true" type="video/mp4">-->    
+         <!--   <source src="/home/harshit/Documents/Neem/img/VID-20171216-WA0028.mp4" type="video/mp4">-->
        
         
-       <!-- <source src="https://www.youtube.com/watch?v=W-TE_Ys4iwM" type="video/mp4">	-->
+        <source src="https://www.youtube.com/watch?v=W-TE_Ys4iwM" type="video/webm">
        <!-- <source src="video/big_buck_bunny.webm" type="video/webm">
         <source src="video/big_buck_bunny.ogv" type="video/ogg">-->
     </video>
@@ -165,8 +161,8 @@ NEEM 2K18
         <a href="index.html"><div class="test4"><i class="fa fa-home fa-2x"></i></div></a>
         <div class="mask2"><i class="fa fa-bars fa-3x"></i></div>
     </div>
-	<div style="text-align:center">Dragdcdcdcdcddcddc
-	</div>
+    <div style="text-align:center">Dragdcdcdcdcddcddc
+    </div>
 
 
     <div class="fixed-action-btn vertical animated bounceInUp">
