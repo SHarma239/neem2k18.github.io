@@ -1,3 +1,6 @@
+img {
+    border-radius: 50%;
+}
  #back {
 
      height: 100%;
@@ -95,7 +98,7 @@ box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
 .test2 {
   width:60%;
   height:60%;
-  background-color: dimGray;/*rgb(201,76,76);*/
+  background-color:rgba(79,239,95,1);
   border-radius:50%;
   position:absolute;
   color:white;
@@ -434,9 +437,13 @@ box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
     left: -100%;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 1024px) {
   .fullscreen-bg {
-    background: url('/home/harshit/Documents/neem final 24.08.2k16/images/logo1.jpg') center center / cover no-repeat;
+    background: url('/home/harshit/Documents/Neem/img/VID-20171216-WA0028.gif');/* center center / cover no-repeat;*/
+    background-attachment: fixed;
+    background-size:100%;
+     height: 100vh;
+     width: 100vh;
   }
 
   .fullscreen-bg__video {
