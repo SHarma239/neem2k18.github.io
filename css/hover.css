@@ -167,7 +167,7 @@ a.btn-small span.btn {
   -webkit-transform-origin: 0% 50% 0px;
   transition: .2s;
   -webkit-transition: .2s;
-  border-bottom: 1px solid #555;
+  border-bottom: 1px solid #04db53;
 }
 
 .navbar a.link span.active {
@@ -178,7 +178,7 @@ a.btn-small span.btn {
 }
 
 .navbar a.link:hover span.active {
-  background-color: #000;
+  background-color: #04db53;
   transform: matrix3d(0,0,1,0,0,1,0,0,-1,0,0,0,-50,0,0,1);
   -webkit-transform: matrix3d(0,0,1,0,0,1,0,0,-1,0,0,0,-50,0,0,1);
 }
@@ -191,7 +191,7 @@ a.btn-small span.btn {
   transform: matrix3d(0,0,-1,0.00166,0,1,0,0,1,0,0,0,0,0,0,1);
   -webkit-transform: matrix3d(0,0,-1,0.00166,0,1,0,0,1,0,0,0,0,0,0,1);
   left: 100%;
-  background-color: #000;
+  background-color: #04db53;
 }
 
 .navbar a.link:hover span.hover {
