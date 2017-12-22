@@ -155,7 +155,7 @@ box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
 
 
  #particles-js {
-     background: rgba(0,0,0,0.5);
+     background: rgba(0,0,0,0);
      
     /*background: url("/home/harshit/Documents/Neem/css/Spider-Man.Homecoming.2017.1080p.WEB-DL.DD5.1.H264-FGT.mkv.MP4");*/
     /*background: url("/home/harshit/Documents/neem final 24.08.2k16/images/logo1.jpg");*/
@@ -167,7 +167,7 @@ box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
     background-size: cover;
     */ 
 
-     z-index: -50;
+     z-index: 2000;
      position: fixed;
      height: 100%;
      width: 100%;
