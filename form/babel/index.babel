@@ -1,0 +1,40 @@
+$(function(){
+  const config = {
+   apiKey: "AIzaSyA-looevQELswZz74efNG73KqyiPy4GXKY",
+   authDomain: "form-10e26.firebaseapp.com",
+   databaseURL: "https://form-10e26.firebaseio.com",
+   projectId: "form-10e26",
+   storageBucket: "form-10e26.appspot.com",
+   messagingSenderId: "930090846858"
+ };
+ firebase.initializeApp(config);
+  const state={
+    email:'',
+    password: '',
+  };
+  $('.js-form').on('submit', event => {
+    event.preventDefault();
+    const email = $('#js-email').val() || state.email;
+    const password = $('#js-password').val() || state.password;
+    const message = $('#js-message').val();
+    const startpoint = $('#js-list').val();
+    const time = $('#js-list2').val();
+    
+    console.log(email, password, message, startpoint, time);
+    
+    firebase.auth().signInWithEmailAndPassword(email, password)
+      .then(user => {
+        state.email = email;
+        state.password = password;
+      $('#js-login-data').addClass('hidden');
+      firebase.database().ref('messages').push({
+        message, startpoint, time, 
+      });
+      $('.js-form').trigger("reset");
+    })
+    .catch(error => {
+      console.log(error);
+    });
+  });
+});
+
