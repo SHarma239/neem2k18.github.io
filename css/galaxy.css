@@ -6,7 +6,7 @@
   overflow: hidden;
   background-size: cover;
   background-position: center center;
-  z-index: -2000;
+  z-index: -1;
 }
 #large-header {
   opacity: 0.8;

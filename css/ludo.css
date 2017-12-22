@@ -17,8 +17,11 @@ body {
   background-color: transparent;
   width: 350px;
   height: 350px;
-  position: relative;
-  margin: 40px auto;
+  position: absolute;
+  margin-left: 35%;
+  margin-right: auto;
+  margin-bottom: auto;
+  margin-top: 100px;
   perspective-origin: 50% 100px;
   perspective: 1000px;
 }
@@ -129,4 +132,24 @@ body {
 
 .cube:hover {
   transform: rotateX(90deg);
+}
+@media only(min-width: 0) and (max-width:768px) 
+{
+  #cubes
+  {
+    margin-left: 20%;
+  margin-right: auto;
+  margin-bottom: auto;
+  margin-top: 50px;
+}
+}
+
+@media only (min-width: 769px) {
+  #cubes
+  {
+    margin-left: 20%;
+  margin-right: auto;
+  margin-bottom: auto;
+  margin-top: 50px;
+}
 }
