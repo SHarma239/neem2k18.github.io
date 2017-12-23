@@ -10,7 +10,7 @@
 }
 #large-header {
   opacity: 0.8;
-  background-image: url("https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/img/demo-1-bg.jpg");
+  background-image: url('/home/harshit/Documents/website/Neem/img/demo-1-bg.jpg');
 }
 .main-title {
   position: relative;

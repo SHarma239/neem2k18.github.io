@@ -27,7 +27,7 @@ body {
 }
 
 .wrap {
-  width: 200px;
+  width: 300px;
   height: 100px;
   background-color: transparent;
   position: relative;
@@ -35,11 +35,11 @@ body {
   display: inline-block;
   top: 0px;
   left: 0px;
-  transform: rotateX(-20deg) rotateY(-25deg) translateZ(0px);
+  transform: rotateX(-10deg) rotateY(0deg) translateZ(-200px);
 }
 
 .cube {
-  width: 200px;
+  width: 300px;
   height: 100px;
   display: block;
   transform-style: preserve-3d;
@@ -60,13 +60,13 @@ body {
 
 .back {
   transform: translateZ(-50px) rotateY(180deg);
-  width: 200px;
+  width: 300px;
   padding:20PX;
 }
 
 .right {
   width: 100px;
-  transform: rotateY(-270deg) translateX(50px) translateZ(100px);
+  transform: rotateY(-270deg) translateX(50px) translateZ(200px);
   transform-origin: top right;
 }
 
@@ -79,18 +79,18 @@ body {
 .top {
   transform: rotateX(-90deg) translateY(-50px);
   transform-origin: top center;
-  width: 200px;
+  width: 300px;
 }
 
 .bottom {
   transform: rotateX(270deg) translateY(50px);
   transform-origin: bottom center;
-  width: 200px;
+  width: 300px;
 }
 
 .front {
   transform: translateZ(50px);
-  width: 200px;
+  width: 300px;
 }
 
 .wrap:first-child .cube div {
