@@ -4,38 +4,9 @@
 <head>
  <!--   <meta charset="UTF-8">-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
     <title>NEEM 2K18</title>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
-    <script type="text/javascript">
-    $(document).ready(function() {
-        var active1 = false;
-        var active2 = false;
-        var active3 = false;
-        var active4 = false;
-        $('.parent2').on('mousedown touchstart', function() {
-            if (!active1) $(this).find('.test1').css({ 'background-color': 'gray', 'transform': 'translate(0px,125px)' });
-            else $(this).find('.test1').css({ 'background-color': 'dimGray', 'transform': 'none' });
-            if (!active2) $(this).find('.test2').css({ 'background-color': 'gray', 'transform': 'translate(60px,105px)' });
-            else $(this).find('.test2').css({ 'background-color': 'darkGray', 'transform': 'none' });
-            if (!active3) $(this).find('.test3').css({ 'background-color': 'gray', 'transform': 'translate(105px,60px)' });
-            else $(this).find('.test3').css({ 'background-color': 'silver', 'transform': 'none' });
-            if (!active4) $(this).find('.test4').css({ 'background-color': 'gray', 'transform': 'translate(125px,0px)' });
-            else $(this).find('.test4').css({ 'background-color': 'silver', 'transform': 'none' });
-            active1 = !active1;
-            active2 = !active2;
-            active3 = !active3;
-            active4 = !active4;
-        });
-    });
-    $('.txt').html(function(i, html) {
-        var chars = $.trim(html).split("");
-        return '<span>' + chars.join('</span><span>') + '</span>';
-    });
-    </script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-</head>
 
 <body id="body">
 <div id="back">
@@ -130,6 +101,42 @@
     </div>
 
 
+<!--
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+    <script type="text/javascript">
+    $(document).ready(function() {
+        var active1 = false;
+        var active2 = false;
+        var active3 = false;
+        var active4 = false;
+        $('.parent2').on('mousedown touchstart', function() {
+            if (!active1) $(this).find('.test1').css({ 'background-color': 'gray', 'transform': 'translate(0px,125px)' });
+            else $(this).find('.test1').css({ 'background-color': 'dimGray', 'transform': 'none' });
+            if (!active2) $(this).find('.test2').css({ 'background-color': 'gray', 'transform': 'translate(60px,105px)' });
+            else $(this).find('.test2').css({ 'background-color': 'darkGray', 'transform': 'none' });
+            if (!active3) $(this).find('.test3').css({ 'background-color': 'gray', 'transform': 'translate(105px,60px)' });
+            else $(this).find('.test3').css({ 'background-color': 'silver', 'transform': 'none' });
+            if (!active4) $(this).find('.test4').css({ 'background-color': 'gray', 'transform': 'translate(125px,0px)' });
+            else $(this).find('.test4').css({ 'background-color': 'silver', 'transform': 'none' });
+            active1 = !active1;
+            active2 = !active2;
+            active3 = !active3;
+            active4 = !active4;
+        });
+    });
+    $('.txt').html(function(i, html) {
+        var chars = $.trim(html).split("");
+        return '<span>' + chars.join('</span><span>') + '</span>';
+    });
+    </script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+</head>
+
+-->
 
 
  <link rel="stylesheet" href="css/hover.css">
@@ -140,7 +147,7 @@
 
   <div class="containers">
     <div class="navbar">
-      <a class="menu" ><i class="icon-align-justify"></i> </a>
+      <a class="menu" ><i style = "color:#444444"; class="fa fa-home fa-2x" aria-hidden="true"></i> </a>
       <a class="link" href="aboutus.html">
         <span class="active"><span class="valign"><span class="vertical">ABOUT</span></span></span>
         <span class="hover"><span class="valign"><span class="vertical">ABOUT</span></span></span>
@@ -178,12 +185,8 @@
   <div id="large-header" class="large-header">
   <canvas id="demo-canvas"></canvas>
 
- <span><h1 span class="thin">NEEM 2K18</span></h1><br>
 
- <h1 class="main-title">Department of ENVIRONMENTAL SCIENCE & ENGINEERING </h1><br>
-  <p>Presents</p><br>
- <h2><span class="thin">NEEM 2K18</span></h2><br>
-
+ 
 </div>
   <script src='https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/EasePack.min.js'></script>
 <script src='https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/rAF.js'></script>
@@ -262,14 +265,14 @@
  <div class="wrap">
     <div class="cube">
       <div class="front">
-                    <font  style="text-align:center; font-size: 50px;">EVENTS</font>
+                    <font  style="text-shadow: 15px;text-align:center; font-size: 50px;">EVENTS</font>
       </div>
 
       <div class="backff">
         
       </div>
       <div class="top"></div>
-      <div class="bottom"><a href="event.html"> <font style="text-align:center; font-size: 50px;">EVENTS</font></a>
+      <div class="bottom"><a href="event.html"> <font style="text-shadow: 15px;text-align:center; font-size: 50px;">EVENTS</font></a>
       </div>
       <div class="left"></div>
       <div class="right"></div>
@@ -280,12 +283,12 @@
   <div class="wrap">
     <div class="cube">
       <div class="front">
-           <font style="text-align:center; font-size: 50px;">REGISTER</font>
+           <font style="text-shadow: 15px;text-align:center; font-size: 50px;">REGISTER</font>
       </div>
       <div class="backff">
        </div>
       <div class="top"></div>
-      <div class="bottom"> <a href="register.html"><font style="text-align:center; font-size: 50px;">REGISTER</font></a>
+      <div class="bottom"> <a href="register.html"><font style="text-shadow: 15px;text-align:center; font-size: 50px;">REGISTER</font></a>
       </div>
       <div class="left"></div>
       <div class="right"></div>
@@ -341,7 +344,7 @@
                 <div class="containerner">
                     <ul class="iconcons">
                         <li><a href="https://twitter.com/NEEM_IITISM" class="iconcon fa-twitter"><span class="labelbel">Twitter</span></a></li>
-                        <li><a href="https://www.facebook.com/neem2k18" class="iconcon fa-facebook"><span class="labelbel">Facebook</span></a></li>
+                        <li><a href="https://www.facebook.com/NEEM2k18/" class="iconcon fa-facebook"><span class="labelbel">Facebook</span></a></li>
                         <li><a href="https://www.instagram.com/neem_ism" class="iconcon fa-instagram"><span class="labelbel">Instagram</span></a></li>
                         <li><a href="mailto:info.neem18@gmail.com" class="iconcon fa-envelope-o"><span class="labelbel">Email</span></a></li>
                     </ul>

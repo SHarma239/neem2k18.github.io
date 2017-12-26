@@ -10,7 +10,8 @@
 }
 #large-header {
   opacity: 0.8;
-  background-image: url('https://raw.githubusercontent.com/Neem2k18/neem2k18.github.io/master/img/mobilebkg.jpg');
+  background-image: url('https://raw.githubusercontent.com/Neem2k18/neem2k18.github.io/master/img/photo.jpg');
+  background-image: url('/home/harshit/Documents/website/Neem/img/photo.jpg');
 }
 .main-title {
   position: relative;
