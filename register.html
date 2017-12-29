@@ -197,7 +197,7 @@
 
 
    <!-- <div style="position: absolute;margin-left: 35%; top: 50px;left:auto;bottom:auto;right:auto";-->
-        <form  method="post" style="position: absolute;margin-left: 35%; top: 30px;left:auto;bottom:auto;right:auto";>
+        <form  action ="home.html" method="post" style="position: absolute;margin-left: 35%; top: 30px;left:auto;bottom:auto;right:auto";>
 
             <h1>Register Here</h1>
 
@@ -232,6 +232,118 @@
         </form>
 
    <!-- </div>-->
+
+
+
+<script type="text/javascript">
+    (function($) {
+
+     /*   "use_strict";*/
+
+        
+    })(jQuery);
+    $(function() {
+        var config = {
+            apiKey: "AIzaSyA-looevQELswZz74efNG73KqyiPy4GXKY",
+            authDomain: "form-10e26.firebaseapp.com",
+            databaseURL: "https://form-10e26.firebaseio.com",
+            projectId: "form-10e26",
+            storageBucket: "form-10e26.appspot.com",
+            messagingSenderId: "930090846858"
+        };
+        firebase.initializeApp(config);
+        var state = {
+            email: '',
+            password: ''
+        };
+        // This array will store the values of the "checked" vehicle checkboxes
+        var cboxArray = [];
+
+        // Check if the vehicle value has already been added to the array and if not - add it
+        function itemExistsChecker(cboxValue) {
+
+            var len = cboxArray.length;
+
+            if (len > 0) {
+                for (var i = 0; i < len; i++) {
+                    if (cboxArray[i] == cboxValue) {
+                        return true;
+                    }
+                }
+            }
+
+            cboxArray.push(cboxValue);
+        }
+
+        $('input[type="checkbox"]').each(function() {
+
+            var cboxValue = $(this).val();
+            var cboxChecked = localStorage.getItem(cboxValue) == 'true' ? true : false;
+
+            // On page load check if any of the checkboxes has previously been selected and mark it as "checked"
+            if (cboxChecked) {
+
+                $(this).prop('checked', true);
+                itemExistsChecker(cboxValue);
+
+            }
+
+            // On checkbox change add/remove the vehicle value from the array based on the choice
+            $(this).change(function() {
+
+                localStorage.setItem(cboxValue, $(this).is(':checked'));
+
+                if ($(this).is(':checked')) {
+
+                    itemExistsChecker(cboxValue);
+
+                } else {
+
+                    // Delete the vehicle value from the array if its checkbox is unchecked
+                    var cboxValueIndex = cboxArray.indexOf(cboxValue);
+
+                    if (cboxValueIndex >= 0) {
+                        cboxArray.splice(cboxValueIndex, 1);
+                    }
+
+                }
+
+                console.log(cboxArray);
+
+            });
+
+        });
+
+        console.log(cboxArray);
+
+        $('.js-form').on('submit', function(event) {
+            event.preventDefault();
+            var email = $('#js-email').val() || state.email;
+            var password = $('#js-password').val() || state.password;
+            var message = $('#js-message').val();
+            var startpoint = $('#js-list').val();
+            var time = $('#js-list2').val();
+            var country = cboxArray;
+
+            console.log(email, password, message, startpoint, time, country);
+
+            firebase.auth().signInWithEmailAndPassword(email, password).then(function(user) {
+                state.email = email;
+                state.password = password;
+                $('#js-login-data').addClass('hidden');
+                firebase.database().ref('messages').push({
+                    message: message,
+                    startpoint: startpoint,
+                    time: time,
+                    country: country
+                });
+                $('.js-form').trigger("reset");
+            }).catch(function(error) {
+                console.log(error);
+            });
+        });
+    });
+    </script>
 
 
         <link rel="stylesheet" href="css/social.css"/>
