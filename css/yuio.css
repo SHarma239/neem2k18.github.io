@@ -1,0 +1,11 @@
+.uiop
+{
+position: absolute;margin-left: 35%; top: 30px;left:auto;bottom:auto;right:auto;
+}
+
+/*@media .uiop(min-width: 768px)
+{
+position: absolute;margin-left: 35%; top: 30px;left:auto;bottom:auto;right:auto
+}
+
+height width */
