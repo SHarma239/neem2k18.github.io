@@ -1,0 +1,172 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  background-color: #04db53;
+  text-align: center;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  overflow: visible;
+  font-family:'Arial Rounded MT';
+}
+
+#cubes {
+  transform-style: preserve-3d;
+  background-color: transparent;
+  width: 350px;
+  height: 350px;
+  position: absolute;
+  margin-left: 38%;
+  margin-right: auto;
+  margin-bottom: auto;
+  margin-top: 250px;
+  perspective-origin: 50% 100px;
+  perspective: 1000px;
+}
+
+.wrap {
+  width: 300px;
+  height: 100px;
+  background-color: transparent;
+  position: relative;
+  transform-style: preserve-3d;
+  display: inline-block;
+  top: 0px;
+  left: 0px;
+  transform: rotateX(-10deg) rotateY(0deg) translateZ(-200px);
+}
+
+.cube {
+  width: 300px;
+  height: 100px;
+  display: block;
+  transform-style: preserve-3d;
+  perspective-origin: top 100px;
+  background-color: transparent;
+  position: absolute;
+  margin: 0px;
+  transition: all 0.2s linear;
+}
+
+.cube div {
+  height: 100px;
+  box-sizing: border-box;
+  position: absolute;
+  display: block;
+  opacity: .67;
+}
+
+.back {
+  transform: translateZ(-50px) rotateY(180deg);
+  width: 300px;
+  padding:20PX;
+}
+
+.right {
+  width: 100px;
+  transform: rotateY(-270deg) translateX(50px) translateZ(200px);
+  transform-origin: top right;
+}
+
+.left {
+  width: 100px;
+  transform: rotateY(270deg) translateX(-50px);
+  transform-origin: center left;
+}
+
+.top {
+  transform: rotateX(-90deg) translateY(-50px);
+  transform-origin: top center;
+  width: 300px;
+}
+
+.bottom {
+  transform: rotateX(270deg) translateY(50px);
+  transform-origin: bottom center;
+  width: 300px;
+}
+
+.front {
+  transform: translateZ(50px);
+  width: 300px;
+}
+
+.wrap:first-child .cube div {
+  background-color: #04db53;
+  box-shadow: inset 0 0 20px #04db53;
+  border: solid 1px #04db53;
+}
+
+.wrap:nth-child(2) .cube div {
+  background-color: #04db53;
+  box-shadow: inset 0 0 20px #04db53;
+  border: solid 1px #04db53;
+}
+
+
+
+.wrap:last-child .cube div {
+  background-color: #04db53;
+  box-shadow: inset 0 0 20px #04db53;
+  border: solid 1px #04db53;
+}
+
+.back a {
+  transform: rotateZ(180deg);
+  display:inline-block;
+  position:relative;
+  margin:0px auto;
+  color:black;
+  visibility:hidden;
+  text-decoration:none;
+}
+.back:hover a {
+  visibility:visible;
+}
+
+.back a:hover {
+  text-shadow: 5px 5px 5px white;
+}
+
+.cube:hover {
+  transform: rotateX(90deg);
+}
+
+
+
+@media only(max-width:768px) 
+{
+  #cubes
+  {
+    margin-left: 20%;
+  margin-right: auto;
+  margin-bottom: auto;
+  margin-top: 50px;
+}
+}
+
+
+
+/*@media only(min-width: 0) and (max-width:768px) 
+{
+  #cubes
+  {
+    margin-left: 20%;
+  margin-right: auto;
+  margin-bottom: auto;
+  margin-top: 50px;
+}
+}
+*/
+
+@media only (min-width: 769px) {
+  #cubes
+  {
+    margin-left: 20%;
+  margin-right: auto;
+  margin-bottom: auto;
+  margin-top: 50px;
+}
+}

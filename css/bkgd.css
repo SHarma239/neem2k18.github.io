@@ -1,0 +1,6 @@
+body
+{
+    background-image: url('photo.jpg');
+    background-image: url('https://raw.githubusercontent.com/Neem2k18/neem2k18.github.io/master/img/photo.jpg');
+    background-image: url('/home/harshit/Documents/website/Neem/img/photo.jpg'); 
+}
